@@ -1,10 +1,5 @@
 library(reshape2)
 
-## If directory does not exist, create it
-if(!file.exists("./GettingandCleaningDataProjectTest")){
-    dir.create("./GettingandCleaningDataProjectTest")
-}
-
 ## If data has not already been downloaded, download data for analysis
 fileName = "accelerometerData.zip"
 if(!file.exists(fileName)){
@@ -57,3 +52,4 @@ meandata <- dcast(meltdata, subject + activity ~ variable, mean)
 
 ##create new tidy dataset
 write.csv(meandata, "meandata.csv", row.names=FALSE)
+write.table(meandata, "meandata.txt", row.names = FALSE, quote = FALSE)
