@@ -1,11 +1,11 @@
-Overview
+(#Overview)
 Run the run_analysis.R script in order to reproduce the "meandata.csv" dataset.
 
-Requirements
+(#Requirements)
 Before running this script, please set a working directory.
 Install the reshape2 package prior to running this script
 
-Measurements
+(#Measurements)
 subject - numeric identifiers for each of the 30 subjects in the data set. Class = Factor
 activity - denotes the activities that each subject performed. The 6 activites are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING, Class = Factor
 tbodyaccmeanx - Class: Numeric
